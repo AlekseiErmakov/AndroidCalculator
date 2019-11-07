@@ -235,6 +235,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
             else if (command==R.id.result){
+                if (precommand==null){}
                 if(SetNums.contains(precommand) && mathoper!=null){
                     double two = Double.parseDouble(TXTRES);
                     TXTRES=String.valueOf(countDuo(mathoper,First,two));
